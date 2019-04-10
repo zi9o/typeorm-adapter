@@ -10,7 +10,7 @@
     "build": "rimraf lib && tsc",
     "lint": "tslint \"src/**/*.ts\"",
     "fix": "tslint \"src/**/*.ts\" --fix",
-    "test": "jest"
+    "test": "jest --detectOpenHandles"
   },
   "devDependencies": {
     "@types/jest": "^23.3.5",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "casbin": "^1.1.2",
+    "mongodb": "^3.2.3",
     "typeorm": "^0.2.7"
   },
   "files": [
