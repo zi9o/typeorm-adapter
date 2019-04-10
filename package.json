@@ -1,5 +1,5 @@
 {
-  "name": "typeorm-adapter",
+  "name": "@zakariaelfakhry/typeorm-adapter",
   "version": "1.0.3",
   "description": "TypeORM adapter for Casbin",
   "main": "lib/adapter.js",
@@ -36,7 +36,7 @@
   "homepage": "https://casbin.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-casbin/typeorm-adapter.git"
+    "url": "git+https://github.com/zi9o/typeorm-adapter.git"
   },
   "keywords": [
     "casbin",
@@ -84,5 +84,10 @@
       "json",
       "node"
     ]
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "license": "ISC"
 }
