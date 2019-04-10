@@ -34,7 +34,8 @@ export default class TypeORMAdapter implements Adapter {
         const officialOption = {
             entities: [CasbinRule],
             synchronize: true,
-            name: 'node-casbin-official'
+            name: 'node-casbin-official',
+            useNewUrlParser: true
         };
         if (option.name) {
             officialOption.name = option.name;
