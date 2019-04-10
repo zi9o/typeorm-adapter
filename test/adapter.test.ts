@@ -24,12 +24,12 @@ function testGetPolicy(e: Enforcer, res: string[][]) {
 
 test('TestAdapter', async () => {
     const a = await TypeORMAdapter.newAdapter({
-        type: 'mysql',
+        type: 'mongodb',
         host: 'localhost',
-        port: 3306,
-        username: 'root',
-        password: '',
-        database: 'casbin',
+        port: 27017,
+        username: 'dev',
+        password: 'exvivo123456',
+        database: 'marisys-dev',
     });
     try {
         // Because the DB is empty at first,
